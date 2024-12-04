@@ -39,9 +39,10 @@ void utilsClearTerminal() {
 }
 
 void utilsPause() {
+  int action = -1;
   fflush(stdin);
-  puts("Pressione qualquer tecla para continuar...");
-  getchar();
+  puts("Pressione 0 para continuar...");
+  scanf("%d", &action);
   fflush(stdin);
 }
 
